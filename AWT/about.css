@@ -1,0 +1,350 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Font change for better readability */
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* Center the logo and website name in the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px; /* Adjusted to make it circular */
+    border-radius: 50%; /* Make the logo circular */
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+/* Adjust the website name text */
+.website-name {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 10px 0;
+    color: #fff; /* Adjust the color to match your design */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('eventbg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* Team Members Styles */
+.team-members {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.team-member {
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.mission-vision {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.mission-vision h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Timeline Styles */
+.timeline {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.timeline h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.timeline .year {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 10px; /* Add spacing here */
+}
+
+.timeline .event {
+    margin-left: 60px; /* Adjust spacing for readability */
+}
+
+/* Testimonials Styles */
+.testimonials {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.testimonial {
+    margin: 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Contact Styles */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+    color: #ff9900;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .timeline .year {
+        padding: 5px 8px;
+    }
+
+    .timeline .event {
+        margin-left: 20px;
+    }
+
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-media-links a {
+        font-size: 18px;
+    }
+}
+.show-more-button {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.show-more-button:hover {
+    background-color: #ff6600;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-button:hover {
+    background-color: #ff6600;                                                                          
+    transform: scale(1.05); 
+}

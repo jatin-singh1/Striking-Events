@@ -1,0 +1,61 @@
+/* Apply your overall website style and color scheme to the entire page */
+
+.homepage {
+    position: relative;
+}
+
+header {
+    text-align: center;
+    background-color: #ff9900; /* Your existing color scheme */
+    padding: 20px;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size as needed for your circular logo */
+    height: 100px;
+}
+
+.tagline {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+    animation: slide 10s linear infinite;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.gallery {
+    background-color: #fff; /* Background color for the gallery section */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 1%;
+}
